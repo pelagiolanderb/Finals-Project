@@ -1,0 +1,535 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("background-image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95vh;
+}
+/* Log in menu page */
+
+.log-in-menu {
+  width: 35rem;
+  height: 35rem;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  /* display: none; */
+}
+
+.log-in-menu div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 45px;
+}
+
+.input-field, .button-container {
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.input-field input {
+  border: none;
+  border-radius: 15px;
+  width: 250px;
+  height: 35px;
+  padding-left: 10px;
+  font-size: 17px;
+}
+
+.input-field h2 {
+  margin-top: 5px;
+  font-family: roboto;
+}
+
+.button-container button {
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #030303;
+  color: white;
+  cursor: pointer;
+}
+
+.web-logo-menu {
+  width: 120px;
+  height: 120px;
+  left: 430px;
+  top: 430px;
+  border-radius: 100%;
+  position: absolute;
+  opacity: 0.7;
+  border: 1px solid #330EE0;
+}
+
+/* residents page */
+
+.residents-page {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  background-color: #030303;
+  text-align: center;
+  line-height: 55px;
+  font-size: 30px;
+  color: #FFFFFF;
+  top: 0;
+  left: 0;
+  right: 280px;
+  height: 60px;
+}
+
+.side-menu {
+  position: fixed;
+  background: url("side-bar-menu-background.png");
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu div {
+  text-align: center;
+}
+
+.side-content-1 {
+  margin-bottom: 30px;
+}
+
+.option-menu {
+  line-height: 60px;
+  height: 60px;
+  margin-left: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.option-menu:hover {
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: rgba(103, 60, 60, 0.5);
+}
+
+.option-menu h4 {
+  font-size: 16px;
+}
+
+.option-menu img {
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+}
+
+.side-bar-web-logo {
+  height: 130px;
+  width: 130px;
+  border-radius: 100%;
+  border: 1px solid #330EE0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.log-out-container button {
+  margin-top: 50px;
+  padding: 15px 25px 15px 25px;
+  border: none;
+  cursor: pointer;
+  background-color: #534949;
+  color: rgb(255, 255, 255);
+  transition: opacity 0.2s;
+}
+
+.log-out-container button:hover {
+  opacity: 0.7;
+}
+
+.log-out-container button:active {
+  opacity: 0.5;
+}
+
+/* design for content part */
+
+table {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+}
+
+td {
+  background-color: lightblue;
+  text-align: center;
+}
+
+table, tr, th, td {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.content {
+  position: fixed;
+  right: 280px;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+}
+
+.residents-content {
+  display: none;
+}
+
+.titleBlotteredList, .titleResidents {
+  position: fixed;
+  left: -700px;
+}
+
+.titleBlotteredList h1, .titleResidents h1 {
+  margin-top: 50px;
+  margin-left: 30px;
+  line-height: 35px;
+}
+
+.titleBlotteredList span, .titleResidents span {
+  display: block;
+  width: 300px;
+  height: 10px;
+  border-width: 10px;
+  background-color: #797474;
+}
+
+.residents-body-container {
+  position: absolute;
+/*  top: 100px;*/
+  top: 700px;
+  bottom: 10px;
+  left: 10px;
+  right: 600px;
+  padding: 20px;
+}
+
+.grid-residents-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  padding-left: 45px;
+}
+
+.title-container {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid-residents-container .record-summary-container {
+  width: 155px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #9D9AAC;
+}
+
+.record-summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.icon-total-container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-total-container img {
+  margin-right: 40px;
+  height: 70%;
+  width: 40px;
+}
+
+.icon-total-container h1 {
+  margin-top: 0;
+  height: 100%;
+  font-size: 56px;
+}
+
+.title-each-container {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-each-container p {
+  font-size: 13px;
+}
+
+.residents-table-container {
+  position: absolute;
+  top: 700px;
+  bottom: 10px;
+  left: 500px;
+  right: 20px;
+  padding: 20px;
+}
+
+.residents-table {
+  overflow-y: auto;
+  height: 365px;
+  background-color: #80827B;
+  padding: 5px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Blottered List */
+
+.blottered-list-content {
+  display: none;
+}
+
+.blottered-list-body-container {
+  position: absolute;
+  top: 700px;
+  bottom: 80px;
+  left: 30px;
+  right: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.blottered-table-container {
+  margin: auto;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #80827B;
+  padding: 5px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.blottered-table-container table button {
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  height: 20px;
+  width: 100px;
+  margin: 2px;
+  color: white;
+  cursor: pointer;
+}
+
+.blottered-table-container table button:hover {
+  background-color: darkred;
+}
+
+/*residents management content*/
+
+.residents-management-content {
+  display: none;
+}
+
+.title-residents-management-container, .title-account-management-container {
+  position: fixed;
+  left: -700px;
+}
+
+.title-residents-management-container h1, .title-account-management-container h1 {
+  font-size: 40px;
+  margin-top: 50px;
+  margin-left: 30px;
+  line-height: 35px;
+}
+
+.title-residents-management-container span, .title-account-management-container span {
+  display: block;
+  width: 600px;
+  height: 10px;
+  border-width: 10px;
+  background-color: #797474;
+}
+
+.residents-management-body-container {
+  position: absolute;
+  top: 700px;
+  bottom: 5px;
+  left: 10px;
+  right: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.residents-management-table {
+  margin: auto;
+  height: 300px;
+  overflow-y: auto;
+  background-color: #80827B;
+  padding: 5px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.residents-management-table table button {
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  height: 20px;
+  width: 80px;
+  margin: 2px;
+  color: white;
+  cursor: pointer;
+}
+
+.residents-management-table table button:hover {
+  background-color: darkred;
+}
+
+.residents-management-body-container .input-container {
+  position: fixed;
+  bottom: -50px;
+  left: 30px;
+}
+
+.residents-management-body-container .input-container input {
+  height: 30px;
+  width: 170px;
+  border: none;
+  border-radius: 50px;
+  margin-right: 5px;
+  font-size: 16px;
+  padding-left: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.residents-management-body-container .input-container label {
+  font-weight: bold;
+}
+
+.residents-management-body-container .buttons-container {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.residents-management-body-container .buttons-container button {
+  width: 120px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #030303;
+  color: white;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.residents-management-body-container .buttons-container button:hover {
+  opacity: 0.9;
+}
+
+.residents-management-body-container .buttons-container button:active {
+  opacity: 0.8;
+}
+
+/* Account Management Content */
+
+.account-management-content {
+  display: none;
+}
+
+.account-management-body-container {
+  position: absolute;
+  top: 800px;
+  bottom: 40px;
+  left: 180px;
+  right: 180px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  background-color: #80827B;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cpassword-container, .cusername-container {
+  margin: auto;
+}
+
+.cpassword-container {
+  margin-top: 0;
+}
+
+.cpassword-container label {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.cusername-container label {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.account-management-body-container button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.account-management-body-container input {
+  width: 250px;
+  height: 35px;
+  border: none;
+  border-radius: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  text-align: center;
+}
+
+.change-username, .change-password {
+  border: none;
+  border-radius: 50px;
+  background-color: #030303;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  width: 180px;
+  transform: opacity 0.s;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.change-username:hover, .change-password:hover {
+  opacity: 0.9;
+}
+
+.change-username:active, .change-password:active {
+  opacity: 0.8;
+}
+
